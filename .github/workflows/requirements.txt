@@ -1,0 +1,5 @@
+ultralytics
+PySide6
+numpy
+huggingface_hub
+easyocr        # tuỳ chọn: đọc ký tự biển số
