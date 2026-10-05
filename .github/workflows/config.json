@@ -1,0 +1,35 @@
+{
+  "vehicle_model": "yolo11n.pt",
+  "helmet_model": "models\\helmet.pt",
+  "plate_model": "models\\plate.pt",
+  "device": "",
+  "imgsz": 640,
+  "conf_vehicle": 0.4,
+  "conf_helmet": 0.4,
+  "conf_plate": 0.3,
+  "no_helmet_names": [
+    "  Without helmet"
+  ],
+  "helmet_confirm_frames": 3,
+  "helmet_every": 2,
+  "stop_line": [
+    [
+      701,
+      955
+    ],
+    [
+      1,
+      901
+    ]
+  ],
+  "light_roi": [
+    557,
+    421,
+    591,
+    491
+  ],
+  "flip_direction": false,
+  "use_ocr": true,
+  "evidence_dir": "evidence",
+  "db_path": "violations.db"
+}
