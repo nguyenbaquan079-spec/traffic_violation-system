@@ -42,6 +42,8 @@ class Res:
 
 
 class FakeDetector:
+    names = {}  # ViolationSystem logs model.names when the helmet model loads
+
     def __init__(self, script):
         self.script, self.i = script, 0
 
@@ -49,6 +51,12 @@ class FakeDetector:
         out = self.script[min(self.i, len(self.script) - 1)]
         self.i += 1
         return [out]
+
+    def predict(self, frame, **kw):
+        # Stands in for the plate model: PlateReader also builds a YOLO, and the
+        # fake ultralytics module hands it this same object. Returning "no
+        # detections" keeps PlateReader.read() exercised but harmless.
+        return [Res(None, {})]
 
 
 class FakeHelmet:

@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Outputs produced by a run ---
+# These are deliberately ignored: evidence photos can contain readable
+# licence plates, so they should never be committed accidentally.
+evidence/
+violations.db
+
+# --- Generated artefacts ---
+test_output.jpg
+output_video.mp4
+debug_helmet.mp4

@@ -1,7 +1,12 @@
 # Hệ thống phát hiện vi phạm giao thông (YOLO + OpenCV + PySide6)
 
+> 🇬🇧 Bản tiếng Anh (README chính của repo): [../README.md](../README.md)
+
 Phát hiện **vượt đèn đỏ** và **không đội mũ bảo hiểm**, tự chụp ảnh toàn cảnh, ảnh phương tiện và ảnh/biển số,
 lưu vào thư mục `evidence/` và nhật ký SQLite `violations.db`.
+
+**Vị trí mã nguồn:** toàn bộ mã Python nằm ở **thư mục gốc của repo**. Mọi lệnh dưới đây chạy từ
+thư mục gốc (nơi có `config.json`).
 
 ## Cài đặt
 ```bash
